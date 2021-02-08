@@ -19,3 +19,16 @@ function numOfCapitalChar(str){
     return count;
 
 }
+
+//using ASCI
+
+function numOfCapitalChar(str){
+    let count = 0;
+    for(let char of str){
+        let ascii  = char.charCodeAt();
+        if(ascii>=65 && ascii<=90) count++
+        
+    }
+    return count;
+
+}
